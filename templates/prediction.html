@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaKeGA Project</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    
+
+body {
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}	
+	
+      
+      
+
+      .nav-area
+{
+	
+	padding: 1em;
+	background-color: black;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 1px;
+}
+.nav-area li
+{
+	display: inline-block;
+}
+.nav-area li a
+{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 20px;
+}
+.nav-area li a:hover
+{
+	background-color: #fff;
+	color: #333;
+}
+
+
+.output
+{
+
+	font-size: 25px;
+	margin-top: 5px;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+	margin-left: 29%;
+	color:black;
+
+}
+
+.Cherry-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/cherry.jpg);
+   
+    display: flex;
+}
+
+
+.Walnut-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/walnut.jpg);
+   
+    display: flex;
+}
+
+.Apple-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/apple.jpg);
+   
+    display: flex;
+}
+
+.Almond-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/almond.jpg);
+   
+    display: flex;
+}
+
+.Rice-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/rice.jpg);
+   
+    display: flex;
+}
+
+
+
+
+</style>
+<body>
+  
+    <p style="background-image: url('yemberzal.png');"> 
+  <header> 
+    <img src="../static/images/header.png" width=100% alt="Header">
+</header>
+        
+        <ul class="nav-area">
+            
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('crop_recommend') }}">Crop Recommendation</a></li>
+            <li><a href="{{ url_for('yember') }}">AI Chatbot</a></li>
+            <li><a href="{{ url_for('weather') }}">Weather</a></li>
+            <li><a href="https://pmkisan.gov.in/" target="_blank">PM Kisan</a></li>
+            <li><a href="{{ url_for('AboutUs') }}">About Us</a></li>
+            <li><a href="{{ url_for('Login') }}">Farmer Login</a></li>
+                
+        </ul>
+        <div><div>
+            <h2> Based On Your Input, Most Suitable Crop Is : <h2>
+        <div class="output">{{output}}</div>
+
+  
+        
+    {% if output == "Cherry" %}
+   <div class="Cherry-container">
+    
+    
+    {% for post in Cherry %}
+        {% if output == "Cherry" %}
+      
+        <span style="font-size:5em;color:red">{{ post.Title }} </span><div> 
+         <span><h3> DESCRIPTION<h3></span>
+        <span style="font: size 11px;color:black">{{ post.Description }} </span><div>
+          <span><h3> PRODUCTION<h3></span>
+        <span style="font: size 11px;color:black">{{ post.Production }} </span><div>
+          <span><h3> YIELD<h3></span>
+        <span style="font: size 11px;color:black">{{ post.Yield }} </span><div>
+        {% endif %}
+    
+    {% endfor %}
+    {% endif %}
+</div></div></div></div></div>
+
+
+{% if output == "Walnut" %}
+<div class="Walnut-container">
+ {% for post in Walnut %}
+   
+
+     {% if output == "Walnut" %}
+     <span style="font-size:5em;color:yellow">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+
+{% if output == "Apple" %}
+<div class="Apple-container">
+ {% for post in Apple %}
+   
+
+     {% if output == "Apple" %}
+     <span style="font-size:5em;color:brown">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+
+{% if output == "Almond" %}
+<div class="Almond-container">
+ {% for post in Almond %}
+   
+
+     {% if output == "Almond" %}
+     <span style="font-size:5em;color:brown">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+
+{% if output == "Rice" %}
+<div class="Rice-container">
+ {% for post in Rice %}
+   
+
+     {% if output == "Rice" %}
+     <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+ 
+</body>
+</html>
