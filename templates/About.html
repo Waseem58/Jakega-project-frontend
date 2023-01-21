@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaKeGA Project</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    
+
+body {
+  background-image: url('../static/images/yemberzal.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}	
+	
+      
+      
+
+      .nav-area
+{
+	
+	padding: 1em;
+	background-color: black;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 1px;
+}
+.nav-area li
+{
+	display: inline-block;
+}
+.nav-area li a
+{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 20px;
+}
+.nav-area li a:hover
+{
+	background-color: #fff;
+	color: #333;
+}
+
+</style>
+<body>
+  
+    <p style="background-image: url('yemberzal.png');"> 
+  <header> 
+    <img src="../static/images/header.png" width=100% alt="Header">
+</header>
+        
+        <ul class="nav-area">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('crop_recommend') }}">Crop Recommendation</a></li>
+                <li><a href="{{ url_for('yember') }}">AI Chatbot</a></li>
+                <li><a href="{{ url_for('weather') }}">Weather</a></li>
+                <li><a href="{{ url_for('AboutUs') }}">About US</a></li>
+                
+        </ul>
+        <div>
+            <h1> ABOUT US </h1>
+        
+            <footer>
+
+              <div class="container__footer">
+                  <div class="box__footer">
+                      <h2>About Us</h2>
+                      <div class="terms">
+                          <p> This Project serves as one-stop portal for all Argicultural Services in Jammu And Kashmir. It Includes an accurate Crop Recommendation based on Soil Analysis And Weather Conditions Of Jammu And Kashmir. Project Developed By JaKEGA </p>
+                      </div>
+                  </div>
+                  <div class="box__footer">
+                      <h2>External Links</h2>
+                      <a href="http://shak.skuastkashmir.ac.in/SoilTest.aspx">Know Your Soil</a>
+                      <a href="https://pmkisan.gov.in/">PM Kisan</a>
+                      <a href="#">Link A</a>
+                      <a href="#">Link B</a>
+                  </div>
+      
+                  
+      
+                  <div class="box__footer">
+                      <h2>Social</h2>
+                      <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                      <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                      <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                      <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                  </div>
+      
+              </div>
+      
+              
+              </div>
+          </footer>
+         
+</div>
+<link rel="stylesheet" href="../static/css/footerabout.css">
+
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
