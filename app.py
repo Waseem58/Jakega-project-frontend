@@ -112,7 +112,7 @@ def predict():
 
     Rice = [
         
-        {"Title": "Rice",
+        {"Title": "Paddy",
         "Description": " Rice is a staple crop grown in many parts of the world, including the region of Kashmir. It is a semi-aquatic grass that is typically grown in flooded fields, or paddies. The plant requires a warm climate and plenty of water to grow successfully. ",
         "Production": " rice is typically grown in the Jammu region, which is known for its fertile soil and ample water supply. The crop is usually planted in April and harvested in September. The yield per hectare varies depending on the variety of rice and the growing conditions, but it can range from 2 to 5 tons per hectare. ",
         "Yield": " rice is typically grown in the Jammu region, which is known for its fertile soil and ample water supply. The crop is usually planted in April and harvested in September. The yield per hectare varies depending on the variety of rice and the growing conditions, but it can range from 2 to 5 tons per hectare.",
@@ -122,9 +122,21 @@ def predict():
     ]
 
 
+    Mustard = [
+        
+        {"Title": "Mustard",
+        "Description": " Mustard is a crop that is grown in many regions of the world, including the state of Jammu and Kashmir in India. It is a cool-season crop that is typically planted in the fall and harvested in the spring. The main commercial varieties grown in Jammu and Kashmir are yellow sarson and toria. ",
+        "Production": " The crop is grown on a variety of soils, such as clay loam, sandy loam and loamy sand. The state has a good potential for mustard cultivation as the agro-climatic conditions are suitable for its growth. In terms of production, mustard is a major crop in the state of Jammu and Kashmir, with a significant area under cultivation.",
+        "Yield": " The yield of mustard in Jammu and Kashmir varies depending on the variety and the growing conditions, but it can be quite high. In recent year, the average yield of mustard in the state was around 1,000-1,500 kg per hectare.",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
 
     ## Author waseem ## Returning Output
-    return render_template('prediction.html', output=prediction, Cherry=Cherry, Walnut=Walnut, Apple=Apple, Almond=Almond, Rice=Rice)
+    return render_template('prediction.html', output=prediction, Cherry=Cherry, Walnut=Walnut, Apple=Apple, Almond=Almond, Rice=Rice, Mustard=Mustard)
     
 
 if __name__ == '__main__':

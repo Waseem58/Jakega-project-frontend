@@ -168,11 +168,11 @@
 </header>
         
         <ul class="nav-area">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="{{ url_for('crop_recommend') }}">Crop Recommendation</a></li>
                 <li><a href="{{ url_for('yember') }}">AI Chatbot</a></li>
                 <li><a href="{{ url_for('weather') }}">Weather</a></li>
-                <li><a href="https://pmkisan.gov.in/" target="_blank">PM Kisan</a></li>
+                
 		            <li><a href="{{ url_for('AboutUs') }}">About Us</a></li>
                 <li><a href="{{ url_for('Login') }}">Farmer Login</a></li>
                 
@@ -186,22 +186,22 @@
           
           <form>
       
-      <input type="text"  name = "N" placeholder="*Nitrogen" input type="text" required=""/>
-      <input type="text" name = "P"placeholder="*phosphorous"input type="text" required="" /> 
-      <input type="text" name = "K"placeholder="*Potassium" input type="text" required=""/><div><div><div>
+      <input type="text"  name = "N" placeholder="*Nitrogen" input type="number" required=""/>
+      <input type="text" name = "P"placeholder="*phosphorous"input type="number" required="" /> 
+      <input type="text" name = "K"placeholder="*Potassium" input type="number" required=""/><div><div><div>
 
-      <input type="text" name = "Temperature" placeholder="*Temperature" input type="text" required="" />
+      <input type="text" name = "Temperature" placeholder="*Temperature" input type="number" required="" />
       <input type="text"  name = "pH"placeholder="*Ph" input type="text"required=""/>
-      <input type="text"  name = "rainfall"placeholder="*Rainfall" input type="text"required="" /> <div><div><div>
+      <input type="text"  name = "rainfall"placeholder="*Rainfall" input type="number"required="" /> <div><div><div>
 
-      <input type="text"  name = "Humidity"placeholder="*Humidity" input type="text" required=""/> <div><div></div>
+      <input type="text"  name = "Humidity"placeholder="*Humidity" input type="number" required=""/> <div><div></div>
 
       
-	<input type="text"  name = "EC"placeholder="EC" input type="text" required="" /> 
-	<input type="text"  name = "OC"placeholder="OC" input type="text" required=""/> 
-	<input type="text"  name = "Fe"placeholder="Fe" input type="text" required=""/> <div><div></div>
-  <input type="text"  name = "Cu"placeholder="Cu" input type="text" required=""  /> 
-	<input type="text"  name = "Mn"placeholder="Mn" input type="text" required=""/> 
+	<input type="text"  name = "EC"placeholder="EC" input type="number" required="" /> 
+	<input type="text"  name = "OC"placeholder="OC" input type="number" required=""/> 
+	<input type="text"  name = "Fe"placeholder="Fe" input type="number" required=""/> <div><div></div>
+  <input type="text"  name = "Cu"placeholder="Cu" input type="number" required=""  /> 
+	<input type="text"  name = "Mn"placeholder="Mn" input type="number" required=""/> 
 
 
 
@@ -218,5 +218,8 @@
           
           <div class="output">{{output}}</div>
 </div>
+
+
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
 </body>
 </html>
