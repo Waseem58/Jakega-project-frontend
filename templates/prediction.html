@@ -254,7 +254,7 @@ body {
 
 
 {% if output == "Mustard" %}
-<div class="Mustard-container">
+<div class="Crop-container">
  {% for post in Mustard %}
    
 
@@ -292,6 +292,69 @@ body {
  {% endif %}
 </div></div></div></div></div>
 
+
+
+{% if output == "Pulses" %}
+<div class="Crop-container">
+ {% for post in Pulses %}
+   
+
+     {% if output == "Pulses" %}
+     <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+
+
+
+{% if output == "Peach" %}
+<div class="Crop-container">
+ {% for post in Peach %}
+   
+
+     {% if output == "Peach" %}
+     <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
+
+
+
+{% if output == "Plum" %}
+<div class="Crop-container">
+ {% for post in Plum %}
+   
+
+     {% if output == "Plum" %}
+     <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
+      <span> <p1> DESCRIPTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Description }} </span><div>
+      <span> <p1> PRODUCTION</p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Production }} </span><div>
+      <span> <p1> YIELD </p1> </span><br><br>
+     <span style="font-size:1.2em;color:black">{{ post.Yield }} </span><div>
+     {% endif %}
+ 
+ {% endfor %}
+ {% endif %}
+</div></div></div></div></div>
 
 
 
