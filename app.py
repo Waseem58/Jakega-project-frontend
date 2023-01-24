@@ -127,7 +127,19 @@ def predict():
         {"Title": "Mustard",
         "Description": " Mustard is a crop that is grown in many regions of the world, including the state of Jammu and Kashmir in India. It is a cool-season crop that is typically planted in the fall and harvested in the spring. The main commercial varieties grown in Jammu and Kashmir are yellow sarson and toria. ",
         "Production": " The crop is grown on a variety of soils, such as clay loam, sandy loam and loamy sand. The state has a good potential for mustard cultivation as the agro-climatic conditions are suitable for its growth. In terms of production, mustard is a major crop in the state of Jammu and Kashmir, with a significant area under cultivation.",
-        "Yield": " The yield of mustard in Jammu and Kashmir varies depending on the variety and the growing conditions, but it can be quite high. In recent year, the average yield of mustard in the state was around 1,000-1,500 kg per hectare.",
+        "Yield": " The yield of mustard in Jammu and Kashmir varies depending on the variety and the growing conditions, but it can be quite high. In recent year, the average yield of mustard in the state was around 1,000-1,500 kg per hectare.py",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
+    Mushroom = [
+        
+        {"Title": "Mushroom",
+        "Description": " Mushroom cultivation is an important agricultural activity in the Indian state of Jammu and Kashmir. The most commonly cultivated mushroom in the region is the Agaricus bisporus, also known as the white button mushroom. This mushroom is grown in caves, sheds and tunnels, and is produced year-round.  ",
+        "Production": " Mushroom production involves growing edible mushrooms for consumption. This can be done in a variety of settings, including indoor and outdoor farms, as well as in home gardens. The most common types of mushrooms grown commercially include white button, shiitake, and oyster mushrooms. The process of mushroom cultivation typically involves preparing a substrate, such as straw or sawdust, inoculating it with mushroom spores or spawn, and providing the right conditions for the mushrooms to grow. Factors that can affect mushroom production include temperature, humidity, light, and air circulation.",
+        "Yield": " The yield of the crop depends on various factors such as the cultivation method, the strain of mushroom being grown, and the environmental conditions. In general, yields of around 15-20 kg of mushrooms per square meter per year are typical. The mushroom cultivation in kashmir has good market potential due to its high nutritional value, low calorie content and medicinal properties.",
         
         "author": "Waseem Ahmad"
         }
@@ -135,8 +147,67 @@ def predict():
 
 
 
+    
+    Pulses = [
+        
+        {"Title": "Pulses",
+        "Description": " Pulses are a type of legume that are commonly grown for their protein-rich seeds. They include crops such as lentils, peas, and chickpeas. In the context of Kashmir, pulses are an important crop for farmers as they provide a source of food and income. ",
+        "Production": " the pulse production in the region is increasing due to the adoption of new technologies and farming practices that can help improve yields. For example, farmers are using improved seed varieties, irrigation systems, and crop management techniques to boost their yields.",
+        "Yield": " The yield of pulses in Kashmir can vary depending on factors such as weather conditions, soil quality, and farming practices. However, the yield is generally considered to be lower compared to other regions in India due to the harsh weather conditions and less favorable soil quality.",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
+
+
+    Peach = [
+        
+        {"Title": "Peach",
+        "Description": " Peaches are a type of fruit that belong to the rose family. They have a fuzzy skin and a sweet, juicy flesh. They are typically round in shape and can vary in color from yellow to red.",
+        "Production": " In the context of Kashmir, peach production is a major agricultural industry. The region has a suitable climate and soil for growing peaches, and the fruit is a popular crop among farmers. Peach orchards are found throughout the region, and the fruit is typically harvested during the summer months.",
+        "Yield": " The yield of peaches in Kashmir can vary depending on factors such as weather conditions and farming practices. However, the region is known for producing high-quality peaches with a sweet taste.",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
+
+
+    Plum = [
+        
+        {"Title": "Plum",
+        "Description": " The plum is a small, round fruit that is typically red, purple, or yellow in color. It is a member of the rose family and is related to other fruits such as peaches, apricots, and cherries.",
+        "Production": " In the context of Kashmir, plums are grown primarily in the southern regions of the state. The fruit is known for its sweet and juicy taste, and is often used for making jams, jellies, and preserves. Plum production in Kashmir is largely done on a small scale, with most farmers cultivating the fruit on their own land. The yield of plums in Kashmir can vary depending on factors such as weather conditions, soil quality, and farming practices. However, generally the yield is considered to be moderate.",
+        "Yield": " The yield of plums in Kashmir can vary depending on factors such as weather conditions and farming practices. However, the region is known for producing high-quality peaches with a sweet taste.",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
+
+    Pear = [
+        
+        {"Title": "Pear",
+        "Description": " The pear is a type of fruit that belongs to the Rosaceae family, which also includes other fruits such as apples and peaches. Pears are typically round or bell-shaped and have a smooth, skin that can be green, yellow, or red in color. The flesh of a pear is juicy and sweet, and it has a small core in the center that contains the seeds.",
+        "Production": " In the context of Kashmir, pears are grown mainly in the Srinagar and Shopian districts. The main variety of pear grown in the region is 'Williams', which is known for its large size and sweet taste. The pear trees are grown on a small scale, mostly by local farmers. The fruit is typically harvested in the months of August and September.",
+        "Yield": "The yield of pears in Kashmir can vary depending on the growing conditions and the specific variety of pear being grown. However, the overall yield tends to be low compared to other fruit-producing regions due to the hilly terrain and lack of modern agricultural practices. Additionally, the pear fruit is prone to various pests and diseases which also affects the yield. ",
+        
+        "author": "Waseem Ahmad"
+        }
+    ]
+
+
+
+
+
+
+
     ## Author waseem ## Returning Output
-    return render_template('prediction.html', output=prediction, Cherry=Cherry, Walnut=Walnut, Apple=Apple, Almond=Almond, Rice=Rice, Mustard=Mustard)
+    return render_template('prediction.html', output=prediction, Cherry=Cherry, Walnut=Walnut, Apple=Apple, Almond=Almond, Rice=Rice, Mustard=Mustard, Mushroom=Mushroom, Pulses=Pulses, Peach=Peach, Plum=Plum, Pear=Pear)
     
 
 if __name__ == '__main__':
