@@ -114,6 +114,14 @@ body {
     display: flex;
 }
 
+.Crop-container{
+    width: 80%;
+    margin-left: 10px;
+    background-image: url(../static/images/crop.jpg);
+   
+    display: flex;
+}
+
 
 
 
@@ -137,7 +145,7 @@ body {
                 
         </ul>
         <div><div>
-            <h2> Based On Your Input, Most Suitable Crop Is : <h2>
+            <h2> Based On Your Input, The Recommended Crop Is : <h2>
         <div class="output">{{output}}</div>
 
   
@@ -151,11 +159,11 @@ body {
       
         <span style="font-size:5em;color:red">{{ post.Title }} </span><div> 
          <span><h3> DESCRIPTION<h3></span>
-        <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+        <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
           <span><h3> PRODUCTION<h3></span>
-        <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+        <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
           <span><h3> YIELD<h3></span>
-        <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+        <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
         {% endif %}
     
     {% endfor %}
@@ -171,11 +179,11 @@ body {
      {% if output == "Walnut" %}
      <span style="font-size:5em;color:yellow">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
@@ -191,11 +199,11 @@ body {
      {% if output == "Apple" %}
      <span style="font-size:5em;color:brown">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
@@ -211,11 +219,11 @@ body {
      {% if output == "Almond" %}
      <span style="font-size:5em;color:brown">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
@@ -231,11 +239,11 @@ body {
      {% if output == "Rice" %}
      <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
@@ -253,11 +261,11 @@ body {
      {% if output == "Mustard" %}
      <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
@@ -270,14 +278,14 @@ body {
  {% for post in Mushroom %}
    
 
-     {% if output == "Muushroom" %}
+     {% if output == "Mushroom" %}
      <span style="font-size:5em;color:green">{{ post.Title }} </span><div> 
       <span> <p1> DESCRIPTION</p1> </span>
-     <span style="font-size:0.8em;color:black">{{ post.Description }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Description }} </span><div>
       <span> <p1> PRODUCTION</p1> </span>
-     <span style="font-size:0.6em;color:black">{{ post.Production }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Production }} </span><div>
       <span> <p1> YIELD </p1> </span>
-     <span style="font-size:0.5em;color:black">{{ post.Yield }} </span><div>
+     <span style="font-size:2em;color:black">{{ post.Yield }} </span><div>
      {% endif %}
  
  {% endfor %}
