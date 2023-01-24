@@ -50,7 +50,7 @@ notebook==6.4.12
 numba==0.56.2
 numpy
 packaging==21.3
-pandas==1.5.0
+pandas
 pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
